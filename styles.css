@@ -101,13 +101,15 @@ header nav a{
     max-width: 240px;
     height: 330px;
     text-align: center;
-    font-size: large;
-    line-height: 220px;
-    border-radius: 12px;
+    
+    background-color: black;
+    
     border-radius: 12px;
     overflow: hidden;
 }
 .movie-poster{
+    line-height: 300px;
+    font-size: large;
     max-width: 240px;
     height: 330px;
     object-fit: cover;
@@ -186,11 +188,17 @@ header nav a{
     .movies-card{
         margin: 4px 2px;
     }
+    .movie-poster{
+        font-size: 12px;
+    }
 }
 @media only screen and (max-width : 570px){
 
     #movie-list{
         display: flex;
+    }
+    .movie-poster{
+        font-size: large;
     }
 }
 @media only screen and (max-width : 510px){
@@ -198,6 +206,9 @@ header nav a{
     #movie-list{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+    }
+    .movie-poster{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width : 395px){
@@ -217,5 +228,6 @@ header nav a{
     .movie-poster{
         max-width: 320px;
         min-height: 400px;
+        font-size: large;
     }
 }
