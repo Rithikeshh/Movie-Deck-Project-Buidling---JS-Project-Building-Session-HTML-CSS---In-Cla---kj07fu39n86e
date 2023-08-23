@@ -52,6 +52,9 @@ header nav a{
     gap: 12px;
     margin: 4px 12px;
 }
+.fa-arrow-down, .fa-arrow-up{
+    color: beige;
+}
 .button--light{
     background-color:rgb(34, 34, 34);
 }
@@ -137,6 +140,9 @@ header nav a{
 .fa-solid{
     color: rgb(169, 38, 38);
 }
+.fa-arrow-down, .fa-arrow-up{
+    color: #dedada;
+}
 .fav-movie-icon{
     font-size: 24px;
 }
@@ -218,16 +224,16 @@ header nav a{
         margin: 0px 12px;
     }
     .movies-card{
-        max-width: 320px;
-        min-height: 500px;
+        max-width: 340px;
+        min-height: 560px;
     }
     .poster{
-        max-width: 320px;
-        min-height: 400px;
+        max-width: 340px;
+        min-height: 470px;
     }
     .movie-poster{
-        max-width: 320px;
-        min-height: 400px;
+        max-width: 340px;
+        min-height: 470px;
         font-size: large;
     }
 }
