@@ -13,23 +13,18 @@ let sortByProperty = "vote_count.desc";
 let searchInput = document.querySelector("#search-bar--input");
 // let searchBtn = document.querySelector("#search-bar--button");
 let query = "";
-let timerForSearch = null;
 
 searchInput.addEventListener('input',()=>{
-    clearTimeout(timerForSearch)
-    timerForSearch = setTimeout(()=>{
-
-        query = searchInput.value;
-        paginationShow();
-        pageNumber = 1;
-        if(showFavoriteMovies.classList.contains('active-tab')){
-            getData(pageNumber,sortByProperty,favoriteMoviesArray,query);
-        }
-        else{
-            getData(pageNumber,sortByProperty,null,query);
-        }
-    },1000)
-    
+   
+    query = searchInput.value;
+    paginationShow();
+    pageNumber = 1;
+    if(showFavoriteMovies.classList.contains('active-tab')){
+        getData(pageNumber,sortByProperty,favoriteMoviesArray,query);
+    }
+    else{
+        getData(pageNumber,sortByProperty,null,query);
+    }
 })
 function showLikeAndUnlikeEffect(heart){
     heart.classList.add('like-effect')
